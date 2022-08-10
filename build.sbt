@@ -6,3 +6,8 @@ lazy val root = (project in file("."))
   .settings(
     name := "education-first"
   )
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "3.2.12" % Test
+)
+
+assembly / mainClass := Some("main")
