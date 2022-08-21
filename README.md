@@ -15,3 +15,9 @@
 1. Chose to use a Map because accessing a record has time complexity of O(1) so it is quite efficient.
 2. In addition, one can have 26 records in the Map with only accepting lower case letter so space complexity should be fine.
 3. Sorting is the most expensive operation in the code. Everything else has a time complexity (worst case) O(n) . Sorting on the other hand has a time complexity of 0(nlogn).
+
+``Assumptions``
+1. This application only accepts any string that starts with a letter with lowercase.
+2. It will not parse in any non-alphabetical characters.
+3. A valid string will be following the order of a letter with digit(s) adjacent to it.
+4. Any whitespace will be ignored. 
