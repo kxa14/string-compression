@@ -10,4 +10,4 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.12" % Test
 )
 
-assembly / mainClass := Some("main")
+assembly / mainClass := Some("com.educationFirst.Main")
