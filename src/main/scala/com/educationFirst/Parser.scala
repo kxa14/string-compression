@@ -1,3 +1,5 @@
+package com.educationFirst
+
 import scala.util.matching.Regex
 
 class Parser {
@@ -17,14 +19,5 @@ class Parser {
     parsedResult.toList.sortBy { case (k, _) => k }.foldLeft("") {
       case (res, (k, v)) => s"$res$k$v"
     }
-  }
-}
-
-object Parser {
-  def main(args: Array[String]): Unit = {
-    if (s"${args.mkString("").stripMargin}".isEmpty) {
-      println("Missing an input. Please try again.")
-    } else
-      println(new Parser().compress(s"${args.mkString("").stripMargin}"))
   }
 }
